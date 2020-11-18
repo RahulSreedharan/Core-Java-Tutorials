@@ -35,7 +35,11 @@ public class FileStreamReading_Eg
 			System.out.println("Exception Occured");
 			System.out.println(E.getMessage());
 		} 
-		 
+		finally
+		{
+		    if (My_fileinputstream != null)
+		    		My_fileinputstream.close(); //Close the stream 
+		} 
 		
 		
 	}
